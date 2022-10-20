@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>registration form<h1>
+    <h1>registration form</h1>
         <form method="post" action="user_data.php">
         <label for="name">
        Name: <input type="text" id="name" name="name">
