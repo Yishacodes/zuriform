@@ -16,14 +16,14 @@
        Email: <input type="email" id="email" name="email">
 </label><br>
 <label for="birthday">
-       Name: <input type="date" id="birthday" name="date">
+       Date of Birth: <input type="date" id="birthday" name="date">
 </label><br>
 <label for="gender">
-       Name: <input type="text" id="gender" name="gender">
+       Gender: <input type="text" id="gender" name="gender">
 </label><br>
 <label for="country">
-       Name: <input type="text"  id="country" name="country">
-</label>
+       Country: <input type="text"  id="country" name="country">
+</label><br>
 <button type="submit">submit</button>
 </body>
 </html>
