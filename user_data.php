@@ -1,31 +1,27 @@
 <?php
-$name=$_POST['name'];
-$email=$_POST['email'];
-$date=$_POST['date'];
-$gender=$_POST['gender'];
-$country=$_POST['country'];
-
-echo print_r($_POST)
-
-/*
-echo "NAME: " . $name  ." <br>";
-
-echo "EMAIL: " . $email  ." <br>";
-
-echo "DATE: " . $date  ." <br>";
-
-echo "GENDER: " . $gender  ." <br>";
-
-echo "COUNTRY: " . $country ." <br>";
-*/
+if(isset($_POST['submit'])){
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $date = $_POST['date'];
+    $gender= $_POST['gender'];
+    $country= $_POST['country'];
 
 
-$_POST="./user_data.csv";
-$handle=fopen($_POST,"w");
-fwrite($handle, '$_POST[name,);
-fclose($handle)
+registerUser($name, $email, $date, $gender, $country);
+}
 
+function registerUser($name, $email, $date, $gender,$country){
 
+$file=('user_data.csv');
+$handle=fopen($file, 'w');
+ fwrite($handle, 'registerUser');
+fclose($handle);
+}
+ 
+
+echo print_r($_POST);
 ?>
+
+
 
 
